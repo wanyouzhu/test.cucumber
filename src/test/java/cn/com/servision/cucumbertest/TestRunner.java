@@ -1,10 +1,10 @@
 package cn.com.servision.cucumbertest;
 
 import org.junit.runner.RunWith;
-import cucumber.api.CucumberOptions;
+import cucumber.api.*;
 import cucumber.api.junit.Cucumber;
 
 @RunWith(Cucumber.class)
-@CucumberOptions(features = "features")
+@CucumberOptions(features = "features", snippets = SnippetType.CAMELCASE)
 public class TestRunner {
 }
